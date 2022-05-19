@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(asset/retina_wood.png);
+}
+
+/*Header*/
+
+header {
+	width: 100%;
+	height: 500px;
+	background-image: url(asset/banner2.jpg);
+	background-size: 100%;
+	background-position: bottom -80px left 10px;
+}
+
+header h1 {
+	color: white;
+	font-size: 3em;
+	font-weight: bolder;
+	text-shadow: 0 0 8px rgb(255, 255, 255);
+	font-variant: small-caps;
+	text-align: center;
+	padding-top: 40px;
+}
+
+li, a {
+	text-decoration: none;
+}
+
+nav ul{
+	margin: 50px auto;
+	list-style: none;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a{
+	background-color: rgba(98, 173, 239, .5);
+	padding: 10px;
+	border-radius: 10px;
+	color: #243133;
+	font-weight: bolder;
+	transition: .5s;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+nav a:hover {
+	background-color: rgb(98, 173, 239);
+	color: white;
+	font-weight: bolder;
+}
+
+/*main*/
+.sejarah {
+	margin: 20px auto;
+	padding: 20px;
+	width: 1000px;
+	height: auto;
+	background-image: url(asset/paper.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 30px;
+	box-sizing: border-box;
+}
+
+.main {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 17px;
+}
+
+.tools {
+	margin: 20px auto;
+	padding: 20px;
+	width: 1000px;
+	background-image: url(asset/paper1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 30px;
+	box-sizing: border-box;
+	box-shadow: 0 0 20px 5px black;
+}
+
+.resep{
+	border-radius: 5px 40px 5px;
+	margin: 20px;
+	margin-left: 250px;
+	display: flex;
+	align-items: center;
+}
+
+.resep ol {
+	padding: 30px;
+	font-weight: bolder;
+	line-height: 20px;
+}
+
+h4 {
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.resepV60{
+	width: 400px;
+	height: 400px;
+	background-image: url(asset/v60.jpg);
+	box-sizing: border-box;
+	color: transparent;
+	transition: .7s;
+}
+
+.resep:hover {
+	color: black;
+	opacity: .8;
+}
+
+.resepChemex{
+	width: 400px;
+	height: 400px;
+	background-image: url(asset/chemex.jpg);
+	box-sizing: border-box;
+	color: transparent;
+	transition: .7s;
+}
+
+.resepWave{
+	width: 400px;
+	height: 400px;
+	background-image: url(asset/wave.jpg);
+	box-sizing: border-box;
+	color: transparent;
+	transition: .7s;
+}
+
+.resepBlue{
+	width: 400px;
+	height: 400px;
+	background-image: url(asset/blue_bottle.jpg);
+	box-sizing: border-box;
+	color: transparent;
+	transition: .7s;
+}
+
+.resepKoka{
+	width: 400px;
+	height: 400px;
+	background-image: url(asset/koka.jpg);
+	box-sizing: border-box;
+	color: transparent;
+	transition: .7s;
+}
+
+.resepWave:hover,
+.resepChemex:hover,
+.resepKoka:hover {
+	color: white;
+}
+
+
+/*Kalkulator Seduh*/
+
+.eks {
+	background-image: url(asset/note_book.jpg);
+	width: 1000px;
+	height: auto;
+	font-size: 16px;
+	background-size: cover;
+	border-radius: 20px;
+	margin: 50px auto;
+	padding: 40px;
+	display: grid;
+	grid-template-columns: 1.5fr 0.5fr 0.5fr;
+	grid-template-areas: 
+	'teori calSeduh calSeduh'
+	'teori table table'
+	'teori table table';
+	column-gap: 100px;
+	box-shadow: 0 0 20px 5px black;
+	box-sizing: border-box;
+}
+
+.teori {
+	grid-area: teori;
+	width: 410px;
+}
+
+.table {
+	margin-top: 60px;
+	width: 390px;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.calSeduh {
+	width: 430px;
+	box-sizing: border-box;
+}
+
+#r, .gramasi, #opr,
+#cls, #manis, #oke,
+#body, #selesai {
+	background-color: transparent;
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/*aside*/
+
+aside {
+	width: 390px;
+	height: 616px;
+	margin: 50px auto;
+	background-image: url(asset/cover_book.jpg);
+	border-radius: 4px 20px 20px 4px;
+	box-shadow: 0 0 15px 5px black;
+}
+
+.penulis {
+	text-align: center;
+	padding-top: 300px;
+}
+
+.penulis span {
+	font-size: 1.5em;
+}
+
+.penulis img {
+	border-radius: 10px;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background-image: url(asset/dark_wood.png);
+	text-align: center;
+	padding-top: 40px;
+	color: white;
+	box-shadow: 0 -3px 10px 3px black;
+}
+
+
+/*Hamburger Menu*/
+.menu-toggle{
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+}
+
+.menu-toggle input{
+	position: absolute;
+	width: 40px;
+	height: 28px;
+	left: -5px;
+	top: -3px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	background: black;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+
+
+/*Hamburger Menu Animation*/
+.menu-toggle span:nth-child(2){
+	transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+	transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+	background-color: white;
+	transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+	background-color: white;
+	transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+	opacity: 0;
+	transform: scale(0);
+}
+
+
+
+
+/*Responsive break-point*/
+@media screen and (max-width: 1100px){
+	header {
+		height: 450px;
+		background-position: bottom -60px left 10px;
+	}
+
+	nav ul{
+		width: 50%;
+	}
+
+	.sejarah, .tools, .eks {
+		width: 800px;
+	}
+
+	.resep{
+		margin-left: 180px;
+	}
+
+	.eks {
+		background-image: url(asset/notes.jpg);
+		padding: 70px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		'teori'
+		'calSeduh'
+		'table';
+	}
+
+	.teori, .calSeduh {
+		width: auto;
+	}
+
+	.calSeduh {
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 870px){
+	header {
+		height: 350px;
+		background-position: bottom -40px left 10px;
+	}
+
+	nav ul{
+		width: 70%;
+	}
+
+	.sejarah, .tools, .eks {
+		width: 620px;
+	}
+
+	.resep{
+		margin-left: 90px;
+	}
+
+	.eks {
+		background-position: bottom 0 left -18px;
+	}
+
+}
+
+@media screen and (max-width: 650px){
+	header {
+		height: 250px;
+		background-position: bottom -25px left 10px;
+	}
+
+	.navigasi {
+		display: grid;
+		justify-items: end;
+		order: -1;
+	}
+
+	.menu-toggle {
+		display: flex;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	.navigasi ul {
+		margin-top: 0;
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: black;
+		width: 50%;
+		z-index: 1;
+		transform: translateY(-100%);
+		transition: all 1s;
+		opacity: 0;
+	}
+
+	.navigasi li a {
+		color: white;
+		background-color: inherit;
+	}
+
+	.navigasi ul.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.sejarah, .tools, .eks {
+		width: 480px;
+	}
+
+	.eks {
+		padding-left: 40px;
+	}
+
+	.resep{
+		margin-left: 18px;
+	}
+}
